@@ -10,14 +10,16 @@ Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Mail/0.2/%{module}-%{version}.tar.bz2
 # Source0-md5:	bae977d92cfcb1a3a5e884262ed444cc
 URL:		http://twistedmatrix.com/projects/mail
-BuildRequires:	python-devel >= 2.2
 BuildRequires:	python-Twisted >= 2.0
+BuildRequires:	python-devel >= 2.2
 Requires:	python-Twisted >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-empty
+Mail library for Twisted.
 
+%description -l pl
+Biblioteka Mail dla Twisted.
 
 %prep
 %setup -q -n %{module}-%{version}
@@ -45,6 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README
+%attr(755,root,root) %{_bindir}/mailmail
 %{py_sitedir}/twisted/mail
 %{py_sitedir}/twisted/plugins/twisted_mail.py*
-/usr/bin/mailmail
