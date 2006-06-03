@@ -13,6 +13,7 @@ URL:		http://twistedmatrix.com/projects/mail
 BuildRequires:	python-Twisted >= 2.0
 BuildRequires:	python-devel >= 2.2
 Requires:	python-Twisted >= 2.0
+Obsoletes:	python-Twisted-mail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
