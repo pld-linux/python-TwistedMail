@@ -1,7 +1,7 @@
 %define 	module	TwistedMail
 
 Summary:	Mail library for Twisted
-Summary(pl.UTF-8):   Biblioteka Mail dla Twisted
+Summary(pl.UTF-8):	Biblioteka Mail dla Twisted
 Name:		python-%{module}
 Version:	0.2.0
 Release:	0.1
