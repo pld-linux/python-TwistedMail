@@ -1,15 +1,17 @@
 %define 	module	TwistedMail
+%define		major	8.1
+%define		minor	0
 
 Summary:	Mail library for Twisted
 Summary(pl.UTF-8):	Biblioteka Mail dla Twisted
 Name:		python-%{module}
-Version:	8.0.0
+Version:	%{major}.%{minor}
 Release:	0.1
 License:	MIT
 Group:		Libraries/Python
-Source0:	http://tmrc.mit.edu/mirror/twisted/Mail/8.0/%{module}-%{version}.tar.bz2
-# Source0-md5:	8dfc37a6aae464cd6a28476a253a4cea
-URL:		http://twistedmatrix.com/projects/mail
+Source0:	http://tmrc.mit.edu/mirror/twisted/Mail/%{major}/%{module}-%{version}.tar.bz2
+# Source0-md5:	b471434356da5cdfb04dbe38802425ef
+URL:		http://twistedmatrix.com/trac/wiki/TwistedMail
 BuildRequires:	python-devel >= 2.2
 Requires:	python-Twisted >= 2.0
 Obsoletes:	python-Twisted-mail
