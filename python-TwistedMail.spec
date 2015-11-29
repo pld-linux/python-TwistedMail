@@ -12,6 +12,7 @@ Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Mail/%{major}/%{module}-%{version}.tar.bz2
 # Source0-md5:	b471434356da5cdfb04dbe38802425ef
 URL:		http://twistedmatrix.com/trac/wiki/TwistedMail
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 2.2
 Requires:	python-TwistedCore
 Obsoletes:	python-Twisted-mail
